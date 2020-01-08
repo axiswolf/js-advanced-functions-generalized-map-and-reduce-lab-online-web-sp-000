@@ -6,3 +6,10 @@ function map(array, cb) {
     }
     return result
 }
+
+function reduce(array, cb, value) {
+  for (let x of array) {
+    value = cb(value,x,array)
+  }
+  return value
+}
