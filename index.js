@@ -7,7 +7,7 @@ function map(array, cb) {
     return result
 }
 
-function reduce(array, cb, value="") {
+function reduce(array, cb, value="0") {
   for (let x of array) {
     value = cb(value,x,array)
   }
