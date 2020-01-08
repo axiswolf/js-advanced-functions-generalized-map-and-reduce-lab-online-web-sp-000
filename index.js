@@ -9,7 +9,7 @@ function map(array, cb) {
 
 function reduce(array, cb, value) {
   if (typeof value == "undefined") {
-    if (array.some(isNaN)) value = true 
+    if (array.some(isNaN)) value = true
     else value = 0
   }
   for (let x of array) {
